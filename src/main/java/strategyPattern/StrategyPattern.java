@@ -11,7 +11,7 @@ public class StrategyPattern {
 	     // Use Office Staff strategy
 	     employee.setDutyStrategy(new OfficeStaffStrategy("Cảnh"));
 	     employee.performDuties();
-	     employee.setDutyStrategy(new OfficeStaffStrategy("Khang"));
+	     employee.setDutyStrategy(new ITSupportStrategy("Khang"));
 	     employee.performDuties();
 	 }
 	

@@ -33,7 +33,7 @@ abstract class EmployeeDecorator implements Employee {
  }
 }
 
-//Concrete decorators
+//Existing decorators
 class TeamLeaderDecorator extends EmployeeDecorator {
  public TeamLeaderDecorator(Employee decoratedEmployee) {
      super(decoratedEmployee);
@@ -57,6 +57,33 @@ class OfficeStaffDecorator extends EmployeeDecorator {
      super.performDuties();
      System.out.println("Pha cà phê.");
      System.out.println("Soạn thảo văn bản.");
+ }
+}
+
+//New decorators
+class MarketingManagerDecorator extends EmployeeDecorator {
+ public MarketingManagerDecorator(Employee decoratedEmployee) {
+     super(decoratedEmployee);
+ }
+
+ @Override
+ public void performDuties() {
+     super.performDuties();
+     System.out.println("Lên kế hoạch quảng cáo.");
+     System.out.println("Phân tích thị trường.");
+ }
+}
+
+class ITSupportDecorator extends EmployeeDecorator {
+ public ITSupportDecorator(Employee decoratedEmployee) {
+     super(decoratedEmployee);
+ }
+
+ @Override
+ public void performDuties() {
+     super.performDuties();
+     System.out.println("Sửa chữa máy tính.");
+     System.out.println("Cài đặt phần mềm.");
  }
 }
 

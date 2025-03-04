@@ -11,7 +11,7 @@ public class StatePattern {
 		   // Set state to Office Staff
 		   employee.setState(new OfficeStaffState("Cảnh"));
 		   employee.performDuties();
-		   employee.setState(new OfficeStaffState("Khang"));
+		   employee.setState(new MarketingManagerState("Khang"));
 		   employee.performDuties();
 		}
 }

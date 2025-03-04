@@ -37,10 +37,11 @@ public class Employee {
     }
 
     public static void main(String[] args) {
-        Employee teamLeader = new Employee("John", "Đội Trưởng");
-        Employee officeStaff = new Employee("Anna", "Nhân viên Văn Phòng");
-
+        Employee teamLeader = new Employee("Khang", "Đội Trưởng");
+        Employee officeStaff = new Employee("Canh", "Nhân viên Văn Phòng");
+        Employee director = new Employee("Kien", "Giám đốc");
         teamLeader.performDuties();
         officeStaff.performDuties();
+        director.performDuties();
     }
 }

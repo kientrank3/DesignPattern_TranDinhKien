@@ -7,7 +7,7 @@ public class DecoratorPattern {
 
 	     Employee canh = new OfficeStaffDecorator(new BasicEmployee("Cảnh"));
 	     canh.performDuties();
-	     Employee khang = new OfficeStaffDecorator(new BasicEmployee("Khang"));
+	     Employee khang = new OfficeStaffDecorator(new ITSupportDecorator(khang = new BasicEmployee("Khang")));
 	     khang.performDuties();
 	 }
 	
