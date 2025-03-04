@@ -13,8 +13,7 @@ class TeamLeaderStrategy implements DutyStrategy {
 
     @Override
     public void performDuties() {
-        System.out.println(name + " đi tuần.");
-        System.out.println(name + " gán việc cho nhân viên.");
+    	System.out.println("+ "+name + ": quản lý công ty, phê duyệt ngân sách.");
     }
 }
 
@@ -27,8 +26,7 @@ class OfficeStaffStrategy implements DutyStrategy {
 
     @Override
     public void performDuties() {
-        System.out.println(name + " pha cà phê.");
-        System.out.println(name + " soạn thảo văn bản.");
+    	System.out.println("+ "+name + ": pha cà phê, soạn thảo văn bản.");
     }
 }
 
@@ -42,8 +40,7 @@ class MarketingManagerStrategy implements DutyStrategy {
 
     @Override
     public void performDuties() {
-        System.out.println(name + " lên kế hoạch quảng cáo.");
-        System.out.println(name + " phân tích thị trường.");
+    	System.out.println("+ "+name + " lập báo cáo tài chính, tính lương nhân viên.");
     }
 }
 
@@ -56,8 +53,7 @@ class ITSupportStrategy implements DutyStrategy {
 
     @Override
     public void performDuties() {
-        System.out.println(name + " sửa chữa máy tính.");
-        System.out.println(name + " cài đặt phần mềm.");
+        System.out.println("+ "+name + ": sửa chữa máy tính, cài đặt phần mềm.");
     }
 }
 

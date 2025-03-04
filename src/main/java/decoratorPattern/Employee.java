@@ -15,7 +15,7 @@ class BasicEmployee implements Employee {
 
  @Override
  public void performDuties() {
-     System.out.println(name + " thực hiện nhiệm vụ cơ bản.");
+     System.out.println("+ "+name + " thực hiện nhiệm vụ cơ bản.");
  }
 }
 
@@ -42,8 +42,7 @@ class TeamLeaderDecorator extends EmployeeDecorator {
  @Override
  public void performDuties() {
      super.performDuties();
-     System.out.println("Đi tuần.");
-     System.out.println("Gán việc cho nhân viên.");
+     System.out.println("Đi tuần, Gán việc cho nhân viên.");
  }
 }
 
@@ -55,8 +54,7 @@ class OfficeStaffDecorator extends EmployeeDecorator {
  @Override
  public void performDuties() {
      super.performDuties();
-     System.out.println("Pha cà phê.");
-     System.out.println("Soạn thảo văn bản.");
+     System.out.println("Pha cà phê, Soạn thảo văn bản.");
  }
 }
 
@@ -69,8 +67,7 @@ class MarketingManagerDecorator extends EmployeeDecorator {
  @Override
  public void performDuties() {
      super.performDuties();
-     System.out.println("Lên kế hoạch quảng cáo.");
-     System.out.println("Phân tích thị trường.");
+     System.out.println("Lên kế hoạch quảng cáo, Phân tích thị trường.");
  }
 }
 
@@ -82,8 +79,7 @@ class ITSupportDecorator extends EmployeeDecorator {
  @Override
  public void performDuties() {
      super.performDuties();
-     System.out.println("Sửa chữa máy tính.");
-     System.out.println("Cài đặt phần mềm.");
+     System.out.println("Sửa chữa máy tính, Cài đặt phần mềm.");
  }
 }
 
